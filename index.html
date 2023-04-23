@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Toggle Button</title>
+</head>
+<body>
+   <div class="main"id="main">
+    <div class="btn"onclick="change()">
+        <label for="toggle"class="toggle"id="togg"></label>
+    </div>
+   </div>
+
+
+   <!-- javascript code -->
+      <script>
+         var main=document.getElementById("main");
+         var togg=document.getElementById("togg");
+         function change(){
+            togg.classList.toggle("add");
+            main.classList.toggle("amain")
+         }
+      </script>
+
+</body>
+</html>
